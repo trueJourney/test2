@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+
+/* 환경 설정 초기화 */
+* { 
+    margin: 0;
+    padding: 0;
+}
+li { list-style: none; }
+a {
+    text-decoration: none;
+    color: black;
+}
+.clearBoth {
+    clear: both;
+}
+/* width960px 고정 */
+#wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+/* header영역 */
+#header {
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
+
+#header #menuOn {
+    float: left;
+    width: 25px;
+    margin: 10px 0 0 10px;
+}
+#header #menuOn:hover {
+    cursor: pointer;
+}
+#header #menuOn p {
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 2px;
+}
+#header #menuOn p:nth-child(2) {
+    width: 22px;
+}
+
+#header h1 {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;    
+}
+
+
+/* nav영역 */
+#header nav#menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    border-right: 2px solid gray;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+}
+#header nav#menu #menuOff {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    cursor: pointer;
+}
+#header nav#menu ul {
+    display: flex;
+    flex-direction: column;
+}
+#header nav#menu ul li {
+    height: 40px;
+}
+#header nav#menu ul li a {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+#header nav#menu ul li a:hover {
+    color: green;
+}
+
+
+/* main영역 */
+/* main myNoteceBored영역 */
+#main #myNoteceBored {
+    width: 100%;
+    height: 300px;
+    border: 2px solid gray;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#main #myNoteceBored button {
+    color: black;
+    font-size: 40px;
+    border: 0;
+    background-color: white;
+    position: absolute;
+    top: 120px;
+}
+#main #myNoteceBored button:hover {
+    cursor: pointer;
+}
+#main #myNoteceBored #moveBannerLeft {
+    left: 20px;
+}
+#main #myNoteceBored #moveBannerRight {
+    right: 20px;
+}
+
+/* 나중에 article ul li 태그로 만들기 */
+#main #myNoteceBored article h2,
+#main #myNoteceBored article p {
+    text-align: center;
+    
+}
+#main #myNoteceBored article h2 {
+    padding: 100px 0 50px;
+}
+
+#main #myNoteceBored #bannerLocation {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+#main #myNoteceBored #bannerLocation li {
+    display: inline-block;
+    margin: 2px;
+    width: 10px;
+    height: 10px;
+    background-color:gray;
+    border-radius: 50%;
+}
+
+
+/* main computerLanguageBoard영역 */
+#main #computerLanguageBoard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#main #computerLanguageBoard article {
+    box-sizing: border-box;
+    width: 30%;
+    height: 230px;
+    margin:30px 0 30px 2.5%;
+    padding: 15px;
+    border: 2px solid gray;
+}
+#main #computerLanguageBoard article h2.material {
+    margin: 0 0 10px 0;
+
+}
+#main #computerLanguageBoard article h2.material a:hover {
+    color: green;
+}
+
+
+/* footer영역 */
+footer {
+    width: 100%;
+    height: 80px;
+    color: #c4c4c4;
+    background-color: #333333;
+    border-radius: 20px 20px 0 0;
+}
+footer .authorInfo {
+    margin-left: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+.authorInfo address #e-mail {
+    display: inline-block;
+    color: #c4c4c4;
+}
+.authorInfo address #e-mail:hover {
+    color: #ffffff;
+}
+
+/* aside영역 */
+aside {
+    position: fixed;
+    right: 20px; bottom: 20px;
+
+}
+@media (min-width:320px) and (max-width:960px) {
+    /* 기본설정 */
+    #wrap {
+        width: 100%;
+    }
+
+    /* header영역 */
+
+
+    /* nav영역 */
+
+
+    /* main영역 */
+    /* main myNoteceBored영역 */
+    #main #myNoteceBored {
+        display: none;
+    }
+    /* main computerLanguageBoard영역 */
+    #main #computerLanguageBoard article {
+        box-sizing: border-box;
+        width: 47%;
+        height: 230px;
+        margin:30px 0 30px 2%;
+        padding: 15px;
+        border: 2px solid gray;
+    }
+
+    /* footer영역 */
+}

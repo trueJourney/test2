@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myPortfolio</title>
+    <link rel="stylesheet" href="css/mainPage.css">
+    <script src="js/mainPage.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header영역 -->
+        <header id="header">
+            <div id="menuOn" onclick="menuOn()">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            
+            <div class="clearboth"></div>
+
+            <h1><a href="#"><span style="display:none;">로고</span>myArea</a></h1>
+            
+            <!-- nav영역 -->
+            <nav id="menu">
+                <div id="menuOff" onclick="menuOff()">X</div>
+                <ul>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="#">git</a></li>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Python</a></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="clearBoth"></div>
+
+        <!-- main영역 -->
+        <main role="main" id="main">
+            <section id="myNoteceBored">
+                <button id="moveBannerLeft">&lt;</button>
+                <button id="moveBannerRight">&gt;</button>
+                <article>
+                    <h2>백엔드 개발자가 되는 것이 목표입니다.</h2>
+                    <p>*공부와 복습이 중요*</p>
+                </article>
+                <ul id="bannerLocation">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            <section id="computerLanguageBoard">
+                <article>
+                    <h2 class="material"><a href="resume.html">Resume</a></h2>
+                    <p>이력서: 자기소개페이지로 이동</p>
+                </article>
+                <article>
+                    <h2 class="material"><a href="#">git</a></h2>
+                    <p>git</p>
+                </article>
+                <article>
+                    <h2 class="material"><a href="#">HTML</a></h2>
+                    <p>HTML</p>
+                </article>
+                <article>
+                    <h2 class="material"><a href="#">CSS</a></h2>
+                    <p>CSS</p>
+                </article>
+                <article class="material">
+                    <h2 class="material"><a href="#">JavaScript</a></h2>
+                    <p>JavaScript</p>
+                </article>
+                <article>
+                    <h2 class="material"><a href="#">Python</a></h2>
+                    <p>Python</p>
+                </article>
+            </section>
+
+        </main>
+
+        <div class="clearBoth"></div>
+
+        <!-- footer영역 -->
+        <footer>
+            <div class="authorInfo">
+                <p>Written by developer YB from 2022.</p>
+            </div>
+            <div class="authorInfo">
+                <address>Email: <a href="#" rel="메일" id="e-mail">cd.yb0229@gmil.com</a></address>
+            </div>
+        </footer>
+        <aside><a href="#" rel="홍 이동">홈</a></aside>
+    </div>
+
+</body>
+
+</html>
